@@ -1,0 +1,14 @@
+.input{
+    background: #fff;
+    width:555px;
+    height: 45px;
+    border-radius: calc(0.5 * 44px);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.input input{
+    width: 90%;
+    text-indent: 10px;
+}

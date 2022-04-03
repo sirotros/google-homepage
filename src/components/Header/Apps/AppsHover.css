@@ -1,0 +1,10 @@
+.apphover {
+  position: absolute;
+  top: 30px;
+  right: -25px;
+  background: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  font-size: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,18 @@
+.custom {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6762FF;
+}
+
+
+.custom span{
+    margin-left: 5px;
+}
