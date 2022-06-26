@@ -1,14 +1,15 @@
-import React from "react";
+import { useRef } from "react";
 import "./AddShortcut.css";
 function AddShortcut({ clickOpen }) {
+  const doneRef = useRef(null);
   function doneBtn(e) {
-    const doneBtn = document.querySelector(".doneBtn");
     if (e.target.value !== "") {
-      doneBtn.classList.add("active");
+      doneRef.current.classList.add("active");
     } else {
-      doneBtn.classList.remove("active");
+      doneRef.current.classList.remove("active");
     }
   }
+
   return (
     <div className="popUp">
       <div className="addShortcut">
@@ -25,7 +26,7 @@ function AddShortcut({ clickOpen }) {
           <button className="cancelBtn" id="cancelBtn" onClick={clickOpen}>
             Cancel
           </button>
-          <button className="doneBtn" id="doneBtn">
+          <button className="doneBtn" id="doneBtn" ref={doneRef}>
             Done
           </button>
         </div>

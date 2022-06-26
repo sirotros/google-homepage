@@ -10,7 +10,7 @@ function Shortcut() {
   return (
     <>
       <div className="shortcut" onClick={clickOpen}>
-        <AiFillPlusCircle fontSize="2.7rem" />
+        <AiFillPlusCircle className="shortcut-icon" />
         <div className="btn">Add Shortcut</div>
       </div>
       {openShortcut && <AddShortcut clickOpen={clickOpen} />}
